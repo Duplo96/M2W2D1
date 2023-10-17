@@ -7,6 +7,8 @@ let numero1 = 10;
 let numero2 = 5;
 if ( numero1 > numero2) {
   console.log ("Numero 1 è maggiore di numero 2 ")
+} else {
+  console.log ("Numero 2 minore di numero 1")
 }
 
 
@@ -26,25 +28,25 @@ let num = 20
 
 
 
-if (!num < 5 ) 
+if (num <= 5 ) 
 {
 console.log("Tiny")
 }
-else (num < 10 )  
+else if (num <= 10 )  
 {
   console.log("Small")
 }
   
-if (!num < 15 ) 
+else if (num <= 15 ) 
 { 
   console.log("Medium")
 }
   
-else (num < 20) 
+else if (num <= 20) 
  { 
     console.log ("Large")
   } 
-if (num >= 20 ) 
+else if (num >= 20 ) 
   { 
     console.log ( "Huge")}
   
