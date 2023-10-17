@@ -3,8 +3,13 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
+let numero1 = 10;
+let numero2 = 5;
+if ( numero1 > numero2) {
+  console.log ("Numero 1 è maggiore di numero 2 ")
+}
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /*
 ESERCIZIO 2
@@ -16,22 +21,57 @@ ESERCIZIO 2
   num < 20 - mostra in console "Large"
   num >= 20 - mostra in console "Huge"
 */
+let num = 20
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+
+
+if (!num < 5 ) 
+{
+console.log("Tiny")
+}
+else (num < 10 )  
+{
+  console.log("Small")
+}
+  
+if (!num < 15 ) 
+{ 
+  console.log("Medium")
+}
+  
+else (num < 20) 
+ { 
+    console.log ("Large")
+  } 
+if (num >= 20 ) 
+  { 
+    console.log ( "Huge")}
+  
+
+
 
 //ESERCIZI SUI CICLI: 
 
 /* ESERCIZIO 3
-  Mostra i numeri da 0 a 10 (incluso) in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di "continue").
+Mostra i numeri da 0 a 10 (incluso) in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di "continue").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+for( let i = 0 ; i <= 10 ; i++ ){ 
+  if (i === 3 || i === 8) {
+    continue;
+}
+console.log (i) }
 /* ESERCIZIO 11
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+for ( let x = 0; x <= 15 ; x++){
+  if (x % 2 === 0) {
+    console.log("Il numero è pari")
+  } else { 
+    console.log("Il numero è dispari")
+}
+}
 
 //ESERCIZI EXTRA NON OBBLIGATORI
 
@@ -39,7 +79,7 @@ ESERCIZIO 2
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num1 
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
