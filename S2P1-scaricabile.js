@@ -89,7 +89,16 @@ C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha d
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 40;
+let costoSpedizione = 10;
+
+if (totalShoppingCart > 50) {
+console.log( "Totale €" + totalShoppingCart ) 
+}
+else  {
+totalShoppingCart += costoSpedizione
+  console.log ( "Totale con spese di spezione €" + totalShoppingCart )
+}
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
