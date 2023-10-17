@@ -74,41 +74,41 @@ for ( let x = 0; x <= 15 ; x++){
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-let num1 
+
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
 C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
-
-let totalShoppingCart = 40;
+console.log ()
+let totalShoppingCart = 20;
 let costoSpedizione = 10;
 
 if (totalShoppingCart > 50) {
 console.log( "Totale €" + totalShoppingCart ) 
 }
-else  {
-totalShoppingCart += costoSpedizione
-  console.log ( "Totale con spese di spezione €" + totalShoppingCart )
+else  { 
+console.log   (" Totale con spedizione €"  + (totalShoppingCart + costoSpedizione) )
 }
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
+let isBlackFriday = true;
 
-let blackFriday = true;
-let scontoBlackFriday = totalShoppingCart * 0.2;
-let totaleConSconto = totalShoppingCart - scontoBlackFriday; 
-
-if (blackFriday){
-  console.log( "Totale €" + totaleConSconto)
-
+if (isBlackFriday) {
+// Applica lo sconto
+  totalShoppingCart *= 0.8; 
+  
+}
+if ( totalShoppingCart > 50)
+{
+  console.log( "Totale con sconto €" + totalShoppingCart)
 }
 else {
-  console.log ( "Totale €" + totalShoppingCart
-  )
+  console.log ("Totale con sconto e spedizione €" + (totalShoppingCart + costoSpedizione))
 }
 
 /*  ESERCIZIO EXTRA 4
