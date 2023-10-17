@@ -114,7 +114,19 @@ totalShoppingCart += costoSpedizione
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log()
+console.log("Esercizio Extra 5")
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
+for(let c=1 ; c <= 100 ; c ++) {
+
+  if (c % 3 === 0 && c % 5 === 0){
+    console.log (" FizzBuzz")
+  } 
+else if ( c % 3 === 0) {
+    console.log( "Fizz")
+ }
+else if ( c % 5 === 0 ){
+console.log ( "Buzz")}
+}
