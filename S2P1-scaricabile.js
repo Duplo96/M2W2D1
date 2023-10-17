@@ -13,51 +13,44 @@ if ( numero1 > numero2) {
 
 
 
-/*
-ESERCIZIO 2
-  Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione.
 
-  num < 5 - mostra in console "Tiny"
-  num < 10 - mostra in console "Small"
-  num < 15 - mostra in console "Medium"
-  num < 20 - mostra in console "Large"
-  num >= 20 - mostra in console "Huge"
-*/
+console.log("ESERCIZIO 2 \n Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione. \n num < 5 - mostra in console Tiny \n num < 10 - mostra in console Small \n num < 15 - mostra in console Medium \n num < 20 - mostra in console Large \n num >= 20 - mostra in console Huge")
+
 let num = 20
 
 
 
 
-if (num <= 5 ) 
+if (num < 5 ) 
 {
 console.log("Tiny")
 }
-else if (num <= 10 )  
+else if (num < 10 )  
 {
   console.log("Small")
 }
   
-else if (num <= 15 ) 
+else if (num < 15 ) 
 { 
   console.log("Medium")
 }
   
-else if (num <= 20) 
+else if (num < 20) 
  { 
     console.log ("Large")
   } 
 else if (num >= 20 ) 
   { 
     console.log ( "Huge")}
-  
+
+  console.log()
 
 
 
 //ESERCIZI SUI CICLI: 
 
-/* ESERCIZIO 3
-Mostra i numeri da 0 a 10 (incluso) in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di "continue").
-*/
+console.log ("ESERCIZIO 3 Mostra i numeri da 0 a 10 incluso in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 \n suggerimento ripassa l'uso di continue ") 
+console.log()
 
 for( let i = 0 ; i <= 10 ; i++ ){ 
   if (i === 3 || i === 8) {
@@ -105,7 +98,18 @@ totalShoppingCart += costoSpedizione
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let blackFriday = true;
+let scontoBlackFriday = totalShoppingCart * 0.2;
+let totaleConSconto = totalShoppingCart - scontoBlackFriday; 
+
+if (blackFriday){
+  console.log( "Totale €" + totaleConSconto)
+
+}
+else {
+  console.log ( "Totale €" + totalShoppingCart
+  )
+}
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
