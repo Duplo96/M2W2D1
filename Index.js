@@ -1,71 +1,58 @@
-//ESERCIZI SUGLI IF: 
+//ESERCIZI SUGLI IF:
 
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 let numero1 = 10;
 let numero2 = 5;
-if ( numero1 > numero2) {
-  console.log ("Numero 1 è maggiore di numero 2 ")
+if (numero1 > numero2) {
+  console.log("Numero 1 è maggiore di numero 2 ");
 } else {
-  console.log ("Numero 2 minore di numero 1")
+  console.log("Numero 2 minore di numero 1");
 }
 
+console.log(
+  "ESERCIZIO 2 \n Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione. \n num < 5 - mostra in console Tiny \n num < 10 - mostra in console Small \n num < 15 - mostra in console Medium \n num < 20 - mostra in console Large \n num >= 20 - mostra in console Huge"
+);
 
+let num = 20;
 
-
-console.log("ESERCIZIO 2 \n Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione. \n num < 5 - mostra in console Tiny \n num < 10 - mostra in console Small \n num < 15 - mostra in console Medium \n num < 20 - mostra in console Large \n num >= 20 - mostra in console Huge")
-
-let num = 20
-
-
-
-
-if (num < 5 ) 
-{
-console.log("Tiny")
+if (num < 5) {
+  console.log("Tiny");
+} else if (num < 10) {
+  console.log("Small");
+} else if (num < 15) {
+  console.log("Medium");
+} else if (num < 20) {
+  console.log("Large");
+} else if (num >= 20) {
+  console.log("Huge");
 }
-else if (num < 10 )  
-{
-  console.log("Small")
-}
-  
-else if (num < 15 ) 
-{ 
-  console.log("Medium")
-}
-  
-else if (num < 20) 
- { 
-    console.log ("Large")
-  } 
-else if (num >= 20 ) 
-  { 
-    console.log ( "Huge")}
 
-  console.log()
+console.log();
 
+//ESERCIZI SUI CICLI:
 
+console.log(
+  "ESERCIZIO 3 Mostra i numeri da 0 a 10 incluso in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 \n suggerimento ripassa l'uso di continue "
+);
+console.log();
 
-//ESERCIZI SUI CICLI: 
-
-console.log ("ESERCIZIO 3 Mostra i numeri da 0 a 10 incluso in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 \n suggerimento ripassa l'uso di continue ") 
-console.log()
-
-for( let i = 0 ; i <= 10 ; i++ ){ 
+for (let i = 0; i <= 10; i++) {
   if (i === 3 || i === 8) {
     continue;
+  }
+  console.log(i);
 }
-console.log (i) }
 /* ESERCIZIO 11
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
-for ( let x = 0; x <= 15 ; x++){
+for (let x = 0; x <= 15; x++) {
   if (x % 2 === 0) {
-    console.log("Il numero è pari")
-  } else { 
-    console.log("Il numero è dispari")
-}
+    console.log("Il numero è pari");
+  } else {
+    console.log("Il numero è dispari");
+  }
 }
 
 //ESERCIZI EXTRA NON OBBLIGATORI
@@ -74,22 +61,21 @@ for ( let x = 0; x <= 15 ; x++){
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-
-
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
 C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
-console.log ()
+console.log();
 let totalShoppingCart = 20;
 let costoSpedizione = 10;
 
 if (totalShoppingCart > 50) {
-console.log( "Totale €" + totalShoppingCart ) 
-}
-else  { 
-console.log   (" Totale con spedizione €"  + (totalShoppingCart + costoSpedizione) )
+  console.log("Totale €" + totalShoppingCart);
+} else {
+  console.log(
+    " Totale con spedizione €" + (totalShoppingCart + costoSpedizione)
+  );
 }
 
 /* ESERCIZIO EXTRA 3
@@ -99,16 +85,15 @@ console.log   (" Totale con spedizione €"  + (totalShoppingCart + costoSpedizi
 let isBlackFriday = true;
 
 if (isBlackFriday) {
-// Applica lo sconto
-  totalShoppingCart *= 0.8; 
-  
+  // Applica lo sconto
+  totalShoppingCart *= 0.8;
 }
-if ( totalShoppingCart > 50)
-{
-  console.log( "Totale con sconto €" + totalShoppingCart)
-}
-else {
-  console.log ("Totale con sconto e spedizione €" + (totalShoppingCart + costoSpedizione))
+if (totalShoppingCart > 50) {
+  console.log("Totale con sconto €" + totalShoppingCart);
+} else {
+  console.log(
+    "Totale con sconto e spedizione €" + (totalShoppingCart + costoSpedizione)
+  );
 }
 
 /*  ESERCIZIO EXTRA 4
@@ -117,27 +102,22 @@ else {
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
 
-
 let isMale = true;
-let gender = isMale ? "Male" : "Female"
+let gender = isMale ? "Male" : "Female";
 
-console.log (gender)
+console.log(gender);
 
-
-
-console.log()
-console.log("Esercizio Extra 5")
+console.log();
+console.log("Esercizio Extra 5");
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
-for(let c=1 ; c <= 100 ; c ++) {
-
-  if (c % 3 === 0 && c % 5 === 0){
-    console.log (" FizzBuzz")
-  } 
-else if ( c % 3 === 0) {
-    console.log( "Fizz")
- }
-else if ( c % 5 === 0 ){
-console.log ( "Buzz")}
+for (let c = 1; c <= 100; c++) {
+  if (c % 3 === 0 && c % 5 === 0) {
+    console.log(" FizzBuzz");
+  } else if (c % 3 === 0) {
+    console.log("Fizz");
+  } else if (c % 5 === 0) {
+    console.log("Buzz");
+  }
 }
