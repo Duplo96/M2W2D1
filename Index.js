@@ -117,7 +117,14 @@ else {
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+let isMale = true;
+let gender = isMale ? "Male" : "Female"
+
+console.log (gender)
+
+
+
 console.log()
 console.log("Esercizio Extra 5")
 /* ESERCIZIO EXTRA 5
